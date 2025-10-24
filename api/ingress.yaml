@@ -3,6 +3,10 @@ kind: Ingress
 metadata:
   name: waittime-api-ingress
   namespace: waittime-api
+  annotations:
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "https://waittimewizard.info"
+    nginx.ingress.kubernetes.io/cors-allow-methods: "GET"
 spec:
   ingressClassName: traefik
   rules:

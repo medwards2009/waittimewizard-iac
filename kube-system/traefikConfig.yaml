@@ -1,20 +1,22 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: traefik-config
-  namespace: kube-system
-data:
-  traefik.yml: |
-    entryPoints:
-      web:
-        address: ":80"
-      websecure:
-        address: ":443"
+# NOTE: this configmap deleted from cluster on May 1, 2026
+# because it's not doing anything
+# apiVersion: v1
+# kind: ConfigMap
+# metadata:
+#   name: traefik-config
+#   namespace: kube-system
+# data:
+#   traefik.yml: |
+#     entryPoints:
+#       web:
+#         address: ":80"
+#       websecure:
+#         address: ":443"
 
-    certificatesResolvers:
-      letsencrypt:
-        acme:
-          email: michaeledwards2009@gmail.com
-          storage: /data/acme.json
-          httpChallenge:
-            entryPoint: web
+#     certificatesResolvers:
+#       letsencrypt:
+#         acme:
+#           email: michaeledwards2009@gmail.com
+#           storage: /data/acme.json
+#           httpChallenge:
+#             entryPoint: web

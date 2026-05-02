@@ -1,0 +1,12 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: cors
+  namespace: waittime-api
+spec:
+  headers:
+    accessControlAllowOriginList:
+      - https://waittimewizard.info
+    accessControlAllowMethods:
+      - GET
+    accessControlMaxAge: 600

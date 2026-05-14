@@ -12,7 +12,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: api.waittimewizard.info
+    - host: waittimes.michaelswebstuff.com
       http:
         paths:
           - path: /
@@ -24,5 +24,5 @@ spec:
                   number: 80
   tls:
     - hosts:
-        - api.waittimewizard.info
+        - waittimes.michaelswebstuff.com
       secretName: waittime-wizard-tls

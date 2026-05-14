@@ -9,4 +9,4 @@ spec:
     name: letsencrypt-issuer # <-- Replace with your issuer name
     kind: ClusterIssuer
   dnsNames:
-    - api.waittimewizard.info # <-- Replace with your hostname
+    - waittimes.michaelswebstuff.com
